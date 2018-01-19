@@ -164,13 +164,13 @@ int main() {
 	cout<<"Enter the number associated to the operation you want to do \n1.addnode\n2.add node at a certain position\n3.delete node\n4.Delete a particular element\n5.Display elements of the list\n6.Count elements in the list\n7.Exit\n";
 	while(a!=7)
 	{cin>>a;
-	if(a=1)
+	if(a==1)
 	{cout<<"Enter the element to be inserted";
 	int x;
 	cin>>x;
 	list1.insert(x);
 	}
-	else if(a=2)
+	else if(a==2)
 	{cout<<"Enter the element to be inserted and it's position\n";
 	int x;
 	int i;
@@ -178,15 +178,15 @@ int main() {
 	list1.insertAt(i,x);
 		
 	}
-	else if(a=3)
+	else if(a==3)
 	{list1.deletelast();}
-	else if(a=4)
+	else if(a==4)
 	{cout<<"Enter the position to be deleted\n";
 	int i;
 	cin>>i;
 	list1.deleteAt(i);
 	}
-	else if(a=5)
+	else if(a==5)
 	{list1.display();}
 	else if(a==6)
 	{int n;
